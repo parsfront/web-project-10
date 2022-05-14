@@ -1,18 +1,170 @@
 @font-face {
     font-family: vazir;
-    src: url("../fonts/Vazirmatn-FD-Regular.woff2") format("woff2");
+    src: url("fonts/Vazir-Regular-FD.woff") format("woff");
     font-weight: normal;
 }
 
 @font-face {
     font-family: vazir;
-    src: url("../fonts/Vazirmatn-FD-Bold.woff2") format("woff2");
+    src: url("fonts/Vazir-Bold-FD.woff") format("woff");
     font-weight: bold;
 }
+
 body {
     font-family: vazir;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #333;
+}
+
+/* ============================== Variables */
+:root {
+    --blue-light: #007dfe;
+    --blue-dark: #4d63dd;
+    --blue-dark-2: #0137a4;
+}
+
+/* ============================== CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+/* === btn Round */
+.btn-round a {
+    background-color: var(--blue-dark-2);
+    font-size: 1.5rem;
+    display: inline-block;
+    color: #fff;
+    padding: 0.6rem 2rem 0.6rem 0.4rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-round span {
+    margin-left: 1rem;
+}
+
+.btn-round i {
+    vertical-align: middle;
+    background-color: var(--blue-dark);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3rem;
+    transition: all 0.3s ease;
+}
+
+.btn-round a:hover {
+    background-color: var(--blue-dark);
+}
+
+.btn-round a:hover i {
+    background-color: var(--blue-dark-2);
+}
+
+/* === Btn main */
+.btn-main a {
+    background-color: var(--blue-dark);
+    display: inline-block;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-main a span {
+    margin-left: 1.5rem;
+}
+
+.btn-main a i {
+    vertical-align: middle;
+    font-size: 1.2rem;
+}
+
+.btn-main a:hover {
+    background-color: var(--blue-dark-2);
+}
+
+/* === Header main */
+.header-main {
+    background-image: url("img/header/bg-header.jpg");
+    background-position: center top;
+    background-size: cover;
+    padding: 3rem 0;
+    height: 60rem;
+}
+
+.header-main__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-main__menu {
     background-color: #fff;
+    box-shadow: 0 4px 14px rgba(5, 81, 81, 0.07);
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.header-main__menu-brand a img {
+    width: 10rem;
+}
+
+.header-main__menu-list > ul {
+    display: flex;
+    align-items: center;
+}
+
+.header-main__menu-list > ul > li {
+    margin-left: 4rem;
+    position: relative;
+    padding: 1.7rem 0;
+}
+
+.header-main__menu-list > ul > li a {
+    font-size: 1.5rem;
+    color: #001b24;
+    position: relative;
+}
+
+/* === Header Content */
+.header-main__content {
+    margin-bottom: 7rem;
+}
+
+.header-main__content-box {
+    background-color: #fff;
+    width: 40%;
+    padding: 2rem 2rem 1rem;
+    border-radius: 7rem 3rem 2rem 2rem;
+}
+
+.header-main__content-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #001b24;
+}
+
+.header-main__content-desc {
+    font-size: 1.5rem;
+    line-height: 3rem;
 }
