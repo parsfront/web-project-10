@@ -14,3 +14,18 @@ header_menu_level_two.forEach((item) => {
         item.querySelector("a").insertAdjacentHTML("beforeend", "<i class='fas fa-chevron-left'></i>");
     }
 });
+
+//--Responsive Menu
+const responsive_menu_list = document.querySelectorAll(".responsive-menu__list ul li");
+responsive_menu_list.forEach((item) => {
+    if (item.querySelector("ul") != null) {
+        item.querySelector("a").insertAdjacentHTML("afterend", "<i class='fas fa-chevron-down'></i>");
+        const arrow = item.querySelector(".fa-chevron-down");
+        arrow.addEventListener("click", (e) => {
+            const target_el = e.target;
+            const ul_el = target_el.parentElement.querySelector("ul");
+            ul_el.classList.toggle("show");
+            target_el.classList.toggle("rotate");
+        });
+    }
+});

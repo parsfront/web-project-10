@@ -31,8 +31,10 @@ body {
     padding: 0;
 }
 
+ol,
 ul {
     margin: 0;
+    padding: 0;
 }
 
 li {
@@ -289,8 +291,102 @@ html {
     line-height: 3rem;
 }
 
-/*=== Responsive===*/
+/*---Responsive Mneu---*/
+.responsive-menu__header {
+    background-color: #f6f7f8;
+    border-bottom: 1px solid #d7d0de;
+    height: 6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2.5rem;
+}
 
+.responsive-menu__header .btn-close {
+    font-size: 1.5rem;
+    color: #57606a !important;
+    opacity: 1;
+}
+
+.responsive-menu__body {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.responsive-menu__list > ul > li {
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 0.5rem;
+    padding: 1.5rem 1rem;
+}
+
+.responsive-menu__list > ul > li:last-child {
+    border-bottom: none;
+}
+
+.responsive-menu__list > ul > li > a {
+    font-size: 2rem;
+    color: #242424;
+}
+
+.responsive-menu__list > ul > li i {
+    background-color: #0098b1;
+    height: 25px;
+    width: 25px;
+    font-size: 1.2rem;
+    color: #fff;
+    float: left;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.responsive-menu__list ul li i.rotate {
+    transform: rotate(180deg);
+}
+
+.responsive-menu__list > ul > li ul li i {
+    background-color: #adb5bd;
+    width: 20px;
+    height: 20px;
+    font-size: 1.1rem;
+    margin-top: auto;
+}
+
+.responsive-menu__list ul li ul {
+    background-color: #e9ecef !important;
+    border-radius: 1rem !important;
+    margin-top: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.responsive-menu__list ul li ul.show {
+    margin-top: 2rem;
+    height: auto;
+    opacity: 1;
+}
+
+.responsive-menu__list ul li ul li {
+    padding: 1.2rem 1rem !important;
+}
+
+.responsive-menu__list ul li ul li a {
+    font-size: 1.6rem !important;
+    color: #57606a !important;
+}
+
+.responsive-menu__list ul li ul li ul {
+    background-color: #f8f9fa;
+    border-right: 2px solid #dee2e6;
+}
+
+/*=== Responsive===*/
 /* --- Medium devices (tablets, less than 992px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
     html {
