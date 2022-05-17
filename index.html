@@ -17,16 +17,16 @@
             <div class="header-main__wrapper">
                 <section class="header-main__menu">
                     <div class="row align-items-center">
-                        <div class="col-6 col-sm-4 col-md-2">
+                        <div class="col-4 col-md-2">
                             <div class="header-main__menu-brand">
                                 <a href="./index.html">
                                     <img src="./img/header/logo.png" alt="" />
                                 </a>
                             </div>
                         </div>
-                        <div class="col-6 col-sm-8 col-md-10">
+                        <div class="col-8 col-md-10">
                             <div class="d-flex align-items-center justify-content-end justify-content-lg-between">
-                                <div class="header-main__menu-list">
+                                <div class="header-main__menu-list d-none d-lg-block">
                                     <ul>
                                         <li><a href="#">خانه</a></li>
                                         <li><a href="#">خدمات ما</a>
@@ -73,6 +73,22 @@
                                         <span>021656565</span>
                                         <i class="fas fa-phone-alt"></i>
                                     </a>
+                                </div>
+                                <div class="d-lg-none">
+                                    <button class="responsive-btn ms-3" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#responsive_menu" aria-controls="responsive_menu">
+                                        <i class="fas fa-bars" data-bs-target="#responsive_menu"></i>
+                                    </button>
+
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="responsive_menu"
+                                        aria-labelledby="responsive_menuLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="responsive_menuLabel">Lotrm</h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

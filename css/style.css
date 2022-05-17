@@ -10,6 +10,10 @@
     font-weight: bold;
 }
 
+html {
+    transition: 0.3s all ease;
+}
+
 body {
     font-family: vazir;
 }
@@ -101,6 +105,20 @@ html {
     background-color: var(--blue-dark-2);
 }
 
+/*=== Responsive Btn === */
+.responsive-btn {
+    background-color: #efefef;
+    outline: none;
+    border: none;
+    font-size: 2.5rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* === Header main === */
 .header-main {
     background-image: url("../img/header/bg-header.jpg");
@@ -171,6 +189,17 @@ html {
     width: 80%;
 }
 
+.header-main__menu-list ul li i {
+    font-size: 1.5rem;
+    color: #587c8a;
+    margin-right: 0.8rem;
+    vertical-align: middle;
+}
+
+.header-main__menu-list > ul > li:hover > a i {
+    color: var(--blue-light);
+}
+
 /* === Level 1 Menu ===*/
 .header-main__menu-list > ul > li > ul {
     position: absolute;
@@ -209,6 +238,11 @@ html {
 .header-main__menu-list > ul > li > ul li:hover {
     background-color: #efefef;
     border-radius: 5px;
+}
+
+.header-main__menu-list ul li ul li a i {
+    float: left;
+    line-height: 2rem;
 }
 
 /*=== Level 2 Menu ===*/
@@ -253,4 +287,52 @@ html {
 .header-main__content-desc {
     font-size: 1.5rem;
     line-height: 3rem;
+}
+
+/*=== Responsive===*/
+
+/* --- Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    html {
+        font-size: 9px;
+    }
+
+    /* --- Header main responsive */
+    .header-main {
+        height: 45rem;
+    }
+
+    /* --- header main content responsive */
+    .header-main__content {
+        margin-bottom: 2rem;
+    }
+
+    .header-main__content-box {
+        width: 60%;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    html {
+        font-size: 8px;
+    }
+
+    /* --- Header main responsive */
+    .header-main {
+        height: 40rem;
+    }
+
+    .header-main__menu {
+        padding: 1.3rem;
+    }
+
+    /* --- header main content responsive */
+    .header-main__content {
+        margin-bottom: 0;
+    }
+
+    .header-main__content-box {
+        width: 90%;
+    }
 }
