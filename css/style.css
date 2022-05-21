@@ -551,6 +551,34 @@ html {
     .header-main__content-box {
         width: 60%;
     }
+
+    /*Services Responsive*/
+    .services__item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 2rem 3rem;
+    }
+
+    .services__item-icon {
+        width: 20%;
+    }
+
+    .services__item-title {
+        width: 80%;
+        padding-right: 2rem;
+        font-size: 2rem;
+    }
+
+    .services__item-desc {
+        font-size: 1.8rem;
+        line-height: 4rem;
+    }
+
+    .services__item-link a {
+        width: 6rem;
+        height: 6rem;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -575,5 +603,39 @@ html {
 
     .header-main__content-box {
         width: 90%;
+    }
+
+    /*Head Info Responsive*/
+    .head-info__desc {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /*Services Responsive*/
+    .services__item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 2rem 3rem;
+    }
+
+    .services__item-icon {
+        width: 20%;
+    }
+
+    .services__item-title {
+        width: 80%;
+        padding-right: 2rem;
+        font-size: 2rem;
+    }
+
+    .services__item-desc {
+        font-size: 1.8rem;
+        line-height: 4rem;
+    }
+
+    .services__item-link a {
+        width: 6rem;
+        height: 6rem;
     }
 }
