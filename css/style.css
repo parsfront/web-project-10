@@ -2,12 +2,14 @@
     font-family: vazir;
     src: url("../fonts/Vazirmatn-FD-Regular.woff2") format("woff2");
     font-weight: normal;
+    font-display: block;
 }
 
 @font-face {
     font-family: vazir;
     src: url("../fonts/Vazirmatn-FD-Bold.woff2") format("woff2");
     font-weight: bold;
+    font-display: block;
 }
 
 html {
@@ -491,6 +493,20 @@ html {
 .services__item--selected {
     background: linear-gradient(360deg, #6b63ff 0%, #1799fb 100%);
     z-index: 1;
+    animation: service_item_selected 0.2s ease;
+}
+
+@keyframes service_item_selected {
+    from {
+        opacity: 0.5;
+        border-radius: 30%;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .services__item--selected::before {

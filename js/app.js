@@ -29,3 +29,22 @@ responsive_menu_list.forEach((item) => {
         });
     }
 });
+
+//==Services
+const services__item = document.querySelectorAll(".services__item");
+services__item.forEach((service, idx) => {
+    service.addEventListener("mouseover", (e) => {
+        //--add selected class
+        if (!service.classList.contains("services__item--selected")) {
+            service.classList.add("services__item--selected");
+        }
+        //--remove selected class from siblings
+        services__item.forEach((el, index) => {
+            if (index != idx) {
+                if (el.classList.contains("services__item--selected")) {
+                    el.classList.remove("services__item--selected");
+                }
+            }
+        });
+    });
+});
