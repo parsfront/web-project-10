@@ -547,6 +547,27 @@ html {
     background-color: rgba(242, 249, 255, 0.15);
 }
 
+/*===About Us===*/
+.about-us {
+    margin: 10rem 0;
+}
+
+.about-us__pic img {
+    height: 42rem;
+    border-radius: 2rem;
+}
+
+.about-us__text {
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    text-align: justify;
+}
+
+.about-us .head-info__desc {
+    width: 50%;
+    line-height: 4rem;
+}
+
 /*=== Responsive===*/
 /* --- Medium devices (tablets, less than 992px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -566,6 +587,20 @@ html {
 
     .header-main__content-box {
         width: 60%;
+    }
+
+    .btn-main a {
+        font-size: 1.7rem;
+    }
+
+    .header-main__content-desc {
+        font-size: 1.8rem;
+        line-height: 3.8rem;
+    }
+
+    /*Head Info Responsive*/
+    .head-info__title::after {
+        right: -6rem;
     }
 
     /*Services Responsive*/
@@ -595,12 +630,42 @@ html {
         width: 6rem;
         height: 6rem;
     }
+
+    /*About up Responsive*/
+    .about-us {
+        margin: 5rem 0;
+    }
+
+    .about-us__pic img {
+        height: 32rem;
+        width: 100%;
+        object-fit: cover;
+        object-position: center -18rem;
+    }
+
+    .about-us__text {
+        font-size: 1.8rem;
+    }
+
+    .about-us .head-info__desc {
+        width: 100%;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
     html {
         font-size: 8px;
+    }
+
+    /*---Btn Main Responsive---*/
+    .btn-main a {
+        font-size: 1.7rem;
+    }
+
+    .header-main__content-desc {
+        font-size: 1.8rem;
+        line-height: 3.8rem;
     }
 
     /* --- Header main responsive */
@@ -627,6 +692,14 @@ html {
         margin: 0 auto;
     }
 
+    .head-info__title::after {
+        right: -6rem;
+    }
+
+    .head-info__title {
+        right: 2rem;
+    }
+
     /*Services Responsive*/
     .services__item {
         display: flex;
@@ -653,5 +726,25 @@ html {
     .services__item-link a {
         width: 6rem;
         height: 6rem;
+    }
+
+    /*About us Responsive*/
+    .about-us {
+        margin: 5rem 0;
+    }
+
+    .about-us__pic img {
+        height: 30rem;
+        width: 100%;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    .about-us__text {
+        font-size: 1.8rem;
+    }
+
+    .about-us .head-info__desc {
+        width: 80%;
     }
 }
