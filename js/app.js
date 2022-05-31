@@ -30,7 +30,7 @@ responsive_menu_list.forEach((item) => {
     }
 });
 
-//==Services
+//==Services==
 const services__item = document.querySelectorAll(".services__item");
 services__item.forEach((service, idx) => {
     service.addEventListener("mouseover", (e) => {
