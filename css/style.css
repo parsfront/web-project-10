@@ -685,6 +685,11 @@ html {
         font-size: 1.7rem;
     }
 
+    /*---Btn More Responsive---*/
+    .btn-more a {
+        font-size: 1.7rem;
+    }
+
     .header-main__content-desc {
         font-size: 1.8rem;
         line-height: 3.8rem;
@@ -742,6 +747,54 @@ html {
     .about-us .head-info__desc {
         width: 100%;
     }
+
+    /*---Articles Responsive---*/
+    .articles__item {
+        display: flex;
+        height: 100%;
+        position: relative;
+    }
+
+    .articles__item-thumb {
+        height: 100%;
+    }
+
+    .articles__item-thumb a {
+        height: 100%;
+    }
+
+    .articles__item-thumb img {
+        height: 100%;
+        width: 30rem;
+        object-position: center center;
+    }
+
+    .articles__item-content {
+        padding: 4rem 2.5rem;
+    }
+
+    .articles__item-title a {
+        font-size: 1.8rem;
+    }
+
+    .articles__item-text {
+        font-size: 1.5rem;
+    }
+
+    .articles__item-link a {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: #001b24;
+        padding: 1rem 3rem;
+        color: #fff;
+        border-radius: 0 2rem 0 0;
+        font-size: 1.5rem;
+    }
+
+    .articles__item-link a:hover {
+        color: #f1f1f1;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -752,6 +805,11 @@ html {
 
     /*---Btn Main Responsive---*/
     .btn-main a {
+        font-size: 1.7rem;
+    }
+
+    /*---Btn More Responsive---*/
+    .btn-more a {
         font-size: 1.7rem;
     }
 
@@ -838,5 +896,53 @@ html {
 
     .about-us .head-info__desc {
         width: 80%;
+    }
+
+    /*---Articles Responsive---*/
+    .articles__item {
+        display: flex;
+        height: 100%;
+        position: relative;
+    }
+
+    .articles__item-thumb {
+        height: 100%;
+    }
+
+    .articles__item-thumb a {
+        height: 100%;
+    }
+
+    .articles__item-thumb img {
+        height: 100%;
+        width: 15rem;
+        object-position: center center;
+    }
+
+    .articles__item-content {
+        padding: 4rem 2rem;
+    }
+
+    .articles__item-title a {
+        font-size: 1.8rem;
+    }
+
+    .articles__item-text {
+        font-size: 1.5rem;
+    }
+
+    .articles__item-link a {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: #001b24;
+        padding: 1rem 3rem;
+        color: #fff;
+        border-radius: 0 2rem 0 0;
+        font-size: 1.5rem;
+    }
+
+    .articles__item-link a:hover {
+        color: #f1f1f1;
     }
 }
