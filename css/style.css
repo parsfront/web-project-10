@@ -429,7 +429,7 @@ html {
 /*===Head Info===*/
 .head-info__title {
     font-size: 2rem;
-    color: #1e266d;
+    color: #fff;
     position: relative;
     display: inline-block;
 }
@@ -826,6 +826,201 @@ html {
     color: #001b24;
 }
 
+/* --- Footer */
+.footer {
+    margin-top: 20rem;
+    background-color: #1f2024;
+    border-radius: 20rem 0 0 0;
+    padding: 6rem 0 0;
+}
+
+.footer__info {
+    background-color: #fff;
+    box-shadow: 0 5px 23px rgba(0, 0, 0, 0.09);
+    border-radius: 15px;
+    padding: 3rem 3rem 2rem;
+    margin-left: 4rem;
+    position: relative;
+    margin-top: -19rem;
+}
+
+.footer__info-dots {
+    position: absolute;
+    top: -3rem;
+    right: -3rem;
+    z-index: -1;
+}
+
+.footer__tel {
+    display: flex;
+    border-bottom: 2px solid #f6f6f6;
+    padding-bottom: 5px;
+}
+
+.footer__tel-icon {
+    font-size: 3rem;
+    color: var(--blue-dark);
+}
+
+.footer__tel-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__info-label {
+    font-size: 1.4rem;
+    color: #96b1c1;
+}
+
+.footer__info-tel {
+    font-size: 3rem;
+    color: #001b24;
+    letter-spacing: 3px;
+    transition: color 0.3s ease;
+}
+
+.footer__info-tel:hover {
+    color: var(--blue-dark-2);
+}
+
+.footer__brand-img {
+    width: 10rem;
+}
+
+.footer__brand-title {
+    font-size: 1.5rem;
+    color: #001b24;
+    font-weight: 600;
+}
+
+.footer__text {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    text-align: justify;
+    color: #31474e;
+}
+
+.footer__contact-item {
+    display: flex;
+}
+
+.footer__contact-item i {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.footer__contact-item-val {
+    font-size: 1.2rem;
+    color: #31474e;
+    line-height: 2.5rem;
+}
+
+.footer__social ul {
+    display: flex;
+    align-items: center;
+}
+
+.footer__social ul li {
+    margin-left: 1rem;
+}
+
+.footer__social ul li i {
+    background-color: #11345a;
+    color: #fff;
+    font-size: 1.4rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.footer__social ul li i:hover {
+    background-color: var(--blue-dark);
+}
+
+.footer__content {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+}
+
+.footer__link:first-child {
+    margin-left: 8rem;
+    padding-right: 10rem;
+}
+
+.footer__link ul li {
+    margin-bottom: 1.4rem;
+}
+
+.footer__link ul li a {
+    font-size: 1.3rem;
+    color: #bed0e2;
+    transition: color 0.2s ease;
+    position: relative;
+}
+
+.footer__link ul li a:hover {
+    color: #fff;
+}
+
+.footer__link ul li a::before {
+    content: "";
+    position: absolute;
+    right: -1.5rem;
+    width: 8px;
+    height: 3px;
+    background-color: var(--blue-light);
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 1rem 2rem 2rem 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s linear;
+}
+
+.footer__link ul li a:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.footer__posts ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 12rem;
+}
+
+.footer__posts li {
+    padding: 0.4rem;
+}
+
+.footer__posts a {
+    display: block;
+}
+
+.footer__posts img {
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 0.4rem;
+}
+
+.footer__copyright {
+    padding: 0 10rem;
+}
+
+.footer__copyright-text {
+    margin-top: 5rem;
+    color: #d9d9d9;
+    border-top: 1px solid #4a5764;
+    padding: 2rem 0;
+    font-size: 1.4rem;
+}
+
 /*=== Responsive===*/
 /* --- Medium devices (tablets, less than 992px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -960,6 +1155,137 @@ html {
 
     .articles__item-link a:hover {
         color: #f1f1f1;
+    }
+
+    /* --- Videos responsive */
+    .videos__spec {
+        height: 30rem;
+    }
+
+    .videos__spec::before {
+        bottom: -18rem;
+        height: 13rem;
+    }
+
+    .videos__spec-content {
+        bottom: 5rem;
+        right: 2rem;
+        left: 2rem;
+    }
+
+    .videos__spec-footer {
+        bottom: 1rem;
+        padding: 0 2rem;
+    }
+
+    .videos__spec .videos__spec-icon {
+        top: -2px;
+        left: -2px;
+        font-size: 2.5rem;
+        transform: translate(0);
+        border: none;
+    }
+
+    .videos__spec .videos__spec-icon i {
+        width: 8rem;
+        height: 8rem;
+        color: #001b24;
+        background-color: #fff;
+        border-radius: 0 0 4rem 0;
+    }
+
+    .videos__spec .videos__spec-icon:hover i {
+        border: none;
+        transform: scale(1);
+    }
+
+    .videos__item {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #efefef;
+        border-radius: 1rem 0 0 1rem;
+        box-shadow: 0 20px 20px rgba(220, 226, 255, 0.38);
+    }
+
+    .videos__item-thumb {
+        width: 35rem;
+        height: 20rem;
+    }
+
+    .videos__item-thumb img {
+        border-radius: 10rem 0 0 4rem;
+    }
+
+    .videos__item-content {
+        padding: 2rem 4rem;
+        width: 100%;
+    }
+
+    .videos__item-title a {
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+
+    .videos__spec-date,
+    .videos__spec-view {
+        font-size: 1.5rem;
+    }
+
+    /* --- Footer responsive */
+    .footer__info {
+        margin-left: 2rem;
+    }
+
+    .footer__brand-title {
+        font-size: 1.8rem;
+    }
+
+    .footer__text,
+    .footer__info-label,
+    .footer__contact-item-val {
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+
+    .footer__info-dots {
+        top: -3rem;
+        right: 1rem;
+    }
+
+    .footer__social ul li i {
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.6rem;
+    }
+
+    .footer__head {
+        padding-right: 8rem;
+    }
+
+    .footer__content {
+        justify-content: start;
+    }
+
+    .footer__link ul li a {
+        font-size: 1.6rem;
+    }
+
+    .footer__posts img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .footer__posts ul {
+        padding-right: 8rem;
+    }
+
+    .footer__copyright {
+        padding: 0 3rem;
+    }
+
+    .footer__copyright-text {
+        font-size: 1.6rem;
     }
 }
 
@@ -1110,5 +1436,136 @@ html {
 
     .articles__item-link a:hover {
         color: #f1f1f1;
+    }
+
+    /* --- Videos responsive */
+    .videos__spec {
+        height: 25rem;
+    }
+
+    .videos__spec::before {
+        bottom: -18rem;
+        height: 13rem;
+    }
+
+    .videos__spec-content {
+        bottom: 5rem;
+        right: 2rem;
+        left: 2rem;
+    }
+
+    .videos__spec-footer {
+        bottom: 1rem;
+        padding: 0 2rem;
+    }
+
+    .videos__spec .videos__spec-icon {
+        top: -2px;
+        left: -2px;
+        font-size: 2.5rem;
+        transform: translate(0);
+        border: none;
+    }
+
+    .videos__spec .videos__spec-icon i {
+        width: 8rem;
+        height: 8rem;
+        color: #001b24;
+        background-color: #fff;
+        border-radius: 0 0 4rem 0;
+    }
+
+    .videos__spec .videos__spec-icon:hover i {
+        border: none;
+        transform: scale(1);
+    }
+
+    .videos__item {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #efefef;
+        border-radius: 1rem 0 0 1rem;
+        box-shadow: 0 20px 20px rgba(220, 226, 255, 0.38);
+    }
+
+    .videos__item-thumb {
+        width: 25rem;
+        height: 15rem;
+    }
+
+    .videos__item-thumb img {
+        border-radius: 10rem 0 0 4rem;
+    }
+
+    .videos__item-content {
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .videos__item-title a {
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+
+    .videos__spec-date,
+    .videos__spec-view {
+        font-size: 1.5rem;
+    }
+
+    /* --- Footer responsive */
+    .footer__info {
+        margin-left: 2rem;
+    }
+
+    .footer__brand-title {
+        font-size: 1.8rem;
+    }
+
+    .footer__text,
+    .footer__info-label,
+    .footer__contact-item-val {
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+
+    .footer__info-dots {
+        top: -3rem;
+        right: 1rem;
+    }
+
+    .footer__social ul li i {
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.6rem;
+    }
+
+    .footer__head {
+        padding-right: 8rem;
+    }
+
+    .footer__content {
+        justify-content: start;
+    }
+
+    .footer__link ul li a {
+        font-size: 1.6rem;
+    }
+
+    .footer__posts img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .footer__posts ul {
+        padding-right: 8rem;
+    }
+
+    .footer__copyright {
+        padding: 0 3rem;
+    }
+
+    .footer__copyright-text {
+        font-size: 1.6rem;
     }
 }
